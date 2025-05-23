@@ -28,11 +28,12 @@ public class pdf {
             pg.beginText();
             pg.setFont(PDType1Font.TIMES_ROMAN, 16);
             pg.newLineAtOffset(100, 700);
-            pg.showText(" Usuario : " + usuario + "  ");
-            pg.showText(" ");
-            pg.showText(" Fruta ingresada : " + ingreso + "  ");
-            pg.showText(" ");
-            pg.showText(" Cliente " + cliente + "  ");
+            
+            pg.showText(" Usuario : " + usuario + "      ");
+            pg.showText("      ");
+            pg.showText(" Fruta ingresada : " + ingreso + "     ");
+            pg.showText("     ");
+            pg.showText(" Cliente : " + cliente + "      ");
             pg.endText();
             pg.close();
             document.save(ruta);
